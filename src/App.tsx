@@ -1,9 +1,8 @@
-import React, { Suspense, useContext } from 'react'
+import  { Suspense} from 'react'
 import './style/index.scss'
 import { Link, Route, Routes } from 'react-router-dom'
 import { AboutPageAsync } from './pages/AboutPage/index.lazy'
 import { MainPageAsync } from './pages/MainPage/index.lazy'
-import { ThemeContext } from './theme/ThemeContext'
 import { useThemeResult } from './theme/useTheme'
 import { classNames } from './helpers/classNames/classNames'
 
