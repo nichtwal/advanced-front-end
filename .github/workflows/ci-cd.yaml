@@ -21,7 +21,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '22.12.0' # Укажите вашу версию Node.js
+          node-version: '18' # Используйте актуальную версию Node.js
           cache: 'npm'
 
       # Установить зависимости
@@ -45,24 +45,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Установить Node.js
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '22.12.0'
-          cache: 'npm'
-
-      # Установить зависимости
-      - name: Install dependencies
-        run: npm install
-
-      # Собрать проект
-      - name: Build the project
-        run: npm run build
-
-      # Деплой
+      # Деплой на GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-       github_token: ${{secrets.MY_PERSONAL_TOKEN }}
-          publish_dir: ./dist # Укажите путь до вашей собранной директории
+          github_token: ${{ secrets.MY_PERSONAL_TOKEN }}
+          publish_dir: ./dist # Укажите путь до собранной директории
