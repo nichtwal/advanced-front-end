@@ -1,10 +1,10 @@
 import  { Suspense} from 'react'
 import './style/index.scss'
 import { Link, Route, Routes } from 'react-router-dom'
-import { AboutPageAsync } from './pages/AboutPage/index.lazy'
-import { MainPageAsync } from './pages/MainPage/index.lazy'
-import { useThemeResult } from './theme/useTheme'
-import { classNames } from './helpers/classNames/classNames'
+import { useThemeResult } from './providers/ThemeProvider'
+import { classNames } from '../helpers/classNames/classNames'
+import { AboutPageAsync } from '../pages/AboutPage/ui/index.lazy'
+import { MainPageAsync } from '../pages/MainPage/index.lazy'
 
 export const App = () => {
  const {theme, themeToggler} = useThemeResult()
