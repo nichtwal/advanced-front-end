@@ -3,14 +3,17 @@ import { useThemeResult } from "./providers/ThemeProvider";
 import { classNames } from "../helpers/classNames/classNames";
 import { AppRouter } from "./providers/routing";
 import { Navbar } from "../widgets/nav-bar";
+import { Sidebar } from "../widgets/side-bar";
 
 export const App = () => {
-  const { theme, themeToggler } = useThemeResult();
+  const { theme } = useThemeResult();
   return (
     <div className={classNames("app", {}, [theme])}>
-      <button onClick={themeToggler}>theme</button>
       <Navbar />
-      <AppRouter />
+      <div className='content-page'>
+        <Sidebar />
+        <AppRouter />
+      </div>
     </div>
   );
 };
