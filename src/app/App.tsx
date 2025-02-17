@@ -4,16 +4,19 @@ import { classNames } from "../helpers/classNames/classNames";
 import { AppRouter } from "./providers/routing";
 import { Navbar } from "../widgets/nav-bar";
 import { Sidebar } from "../widgets/side-bar";
+import { Suspense } from "react";
 
 export const App = () => {
   const { theme } = useThemeResult();
   return (
     <div className={classNames("app", {}, [theme])}>
-      <Navbar />
-      <div className='content-page'>
-        <Sidebar />
-        <AppRouter />
-      </div>
+      <Suspense fallback="">
+        <Navbar />
+        <div className="content-page">
+          <Sidebar />
+          <AppRouter />
+        </div>
+      </Suspense>
     </div>
   );
 };
