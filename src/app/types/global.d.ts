@@ -3,7 +3,7 @@ declare module '* scss'
     [className:string]: string;
 
  }
- const classNames: IclassNames
+const classNames: IclassNames
  export = classNames
 
  declare module "*.svg" {
