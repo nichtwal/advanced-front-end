@@ -1,0 +1,29 @@
+.PageLoader {
+  min-height: calc(100vh - var(--navbar-heigh));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 5px;
+  &::after,
+  &::before {
+    content: "";
+    height: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: radial-gradient(farthest-side, #000 95%, #0000) 35% 35%/6px 6px
+      no-repeat #fff;
+    transform: scaleX(var(--s, 1)) rotate(0deg);
+    animation: eyes 1s infinite linear;
+  }
+  &::after {
+    --s: -1;
+    animation-delay: -0.1s;
+  }
+}
+
+@keyframes eyes {
+  100% {
+    transform: scaleX(var(--s, 1)) rotate(360deg);
+  }
+}

@@ -7,5 +7,10 @@
         background-color: transparent;
         cursor: pointer;
     }
-
-}
+    &.outline {
+        background-color: transparent;
+        padding: 10px;
+        border:1px solid var(--primary-color);
+        color: var(--primary-color);
+    }
+}   
