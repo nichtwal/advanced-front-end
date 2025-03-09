@@ -10,7 +10,6 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
-.github
 *.local
 
 # Editor directories and files
@@ -20,7 +19,6 @@ dist-ssr
 .dist
 .node_modules
 .DS_Store
-.github
 *.suo
 *.ntvs*
 *.njsproj
