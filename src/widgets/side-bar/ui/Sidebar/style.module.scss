@@ -6,6 +6,21 @@
     transition: width .3s ease-in-out;
     &.collapsed {
         width: var(--collapsed-sidebar-width);
+        .switchers {
+            flex-direction: column;
+            gap: 5px;
+        }
+    }
+
+    .items {
+        margin: 20px 0 20px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        .link {
+
+        }
     }
     .switchers {
         position: absolute;
@@ -15,5 +30,10 @@
         justify-content:center;
         width: 100%;
         gap: 10px;
+    }
+    .button_collapsed {
+        position: absolute;
+        right: -32px;
+        bottom: 32px;
     }
 }

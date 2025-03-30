@@ -11,12 +11,7 @@ const Navbar: React.FC<NavBarProps> = () => {
     return (
         <div className={classNames(cls.Navbar)}>
             <div className={cls.links}>
-                <Applink theme={ApplinkTheme.SECONDARY} className={cls.mainLink} to="/">
-                    Main
-                </Applink>
-                <Applink theme={ApplinkTheme.SECONDARY} to="/about">
-                    About
-                </Applink>
+
             </div>
         </div>
     );

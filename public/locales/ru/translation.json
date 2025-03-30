@@ -2,8 +2,11 @@
   "Main Page": "Главная",
   "Test translation": "Тестовый перевод",
   "translation": "перевод",
-  "Lang": "ру",
+  "Lang": "Русский",
+  "ShortLang": "ру",
   "Page not found": "Старница не найдена",
   "Unexpcted Error": "Неизвестная ошибка",
-  "Refresh": "Обновите старницу"
+  "Refresh": "Обновите старницу",
+  "Main": "Главная",
+  "About": "О стайте"
 }

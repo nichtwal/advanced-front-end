@@ -2,8 +2,11 @@
   "Main Page": "Main Page",
   "Test translation": "Test translation",
   "translation": "translate",
-  "Lang": "en",
+  "Lang": "English",
+  "ShortLang": "en",
   "Page not found": "Page not found",
   "Unexpcted Error": "Unexpcted Error",
-  "Refresh": "Refresh page"
+  "Refresh": "Refresh page",
+  "Main": "Main",
+  "About": "About"
 }
